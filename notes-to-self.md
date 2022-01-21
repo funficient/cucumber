@@ -1,13 +1,26 @@
+# Cucumber | Why?
+
+- Validate assumptions
+- Discover ambiguities
+- Build a shared understanding of what to build
+
 # Personas | Who?
 
 - Software developers
 - Product owners / managers
 - Software testers
 
-# Goals
+# Community Goals
 
 - Get involved in the community while being as productive as possible
 - Create longstanding relationships and contributors
+
+# Product Goals
+- Distributed and parallel execution
+- Better reporting
+- Educate about BDD
+- Document patterns
+- Fast test results
 
 # Issues
 ## Overview / portal
@@ -21,3 +34,7 @@ The two keywords that describes my first interaction with Cucumber is confused a
 ## Document hierarchy
 
 - The hierarchy starts with installation
+- No architecture map
+
+
+

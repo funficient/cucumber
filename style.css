@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --lightGreen: #a6d1ad;
+  --cucumberGreen: #55bb67;
+  --darkGreen: #3e7a49;
+
+  --gradient: linear-gradient(90deg, #55bb67, #3e7a49);
+  --titleBlue: #163647;
+  --primaryGray: #434343;
+  --middleGray: #5d5c5c;
+  --secondaryGray: #898989;
+  --lightGray: #fcfcfc;
+}
+
+*,
+*::before,
+*::after {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Martel", sans-serif;
+  font-size: 4em;
+  line-height: 1.3em;
+}
+
+h2 {
+  font-family: "Martel", sans-serif;
+}
+
+h3 {
+  font-family: "Martel", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 300;
+  color: #111;
+}
+
+q {
+  font-family: "Martel", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  padding: 5rem 10rem;
+  color: #163647;
+  font-style: italic;
+}
+
+li,
+a,
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+section {
+  position: relative;
+}
+
+/*  ---------------------------------------------------------- Buttons ----------------------------------------------------------------------------------------*/
+
+.primary-button {
+  font-size: 1em;
+  letter-spacing: 5%;
+  background-color: #1dbb68;
+  font-weight: 400;
+  color: rgb(252, 252, 252);
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.primary-button:hover {
+  background-color: #434343;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.primary-button:active {
+  transform: scale(0.95);
+}
+/*  -------------------------------------------------    Hero Section --------------------------------------------------------------------------*/
+
+.banner {
+  position: relative;
+  width: 100vw;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(90deg, #55bb67, #488b54);
+}
+
+.content {
+  width: 100%;
+  margin: 5% 5%;
+  align-items: center;
+}
+
+.content h1 {
+  color: #fff;
+  text-align: center;
+}
+
+/*---------------------------------------------------- Intro Text Section ---------------------------------------------------------*/
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 3rem;
+  padding: 0;
+  align-content: center;
+  text-align: center;
+}
+
+.introText {
+  margin: 5%;
+}
+
+.titleText {
+  color: #333;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.introText p {
+  font-size: 1.2rem;
+  color: var(--darkGray);
+  margin: 2rem 5rem;
+}
+
+/*------------------------------------- Values section -------------------------*/
+
+.values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: space-evenly;
+  background-color: #55bb67;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  max-height: fit-content;
+  max-width: 400px;
+  flex-wrap: wrap;
+
+  margin: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.values .card {
+  box-shadow: 0 5px -30px rgba(255, 255, 255, 0.05);
+}
+
+.values h2 {
+  color: #fff;
+  padding: 1rem 0rem;
+}
+
+.values h3 {
+  color: #333;
+}
+
+.values p {
+  color: #5d5c5c;
+}
+
+.safety::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f132";
+  display: inline-block;
+  font-size: 5rem;
+  color: #5d5c5c;
+  fill: #5d5c5c;
+
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.equity::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f24e";
+  display: inline-block;
+  font-size: 5rem;
+  color: #5d5c5c;
+  fill: #5d5c5c;
+
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.explore::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f0c3";
+  display: inline-block;
+  font-size: 5rem;
+  color: #5d5c5c;
+  fill: #5d5c5c;
+
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.timer::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f017";
+  display: inline-block;
+  font-size: 5rem;
+  color: #5d5c5c;
+  fill: #5d5c5c;
+
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.whiteboard::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f51b";
+  display: inline-block;
+  font-size: 5rem;
+  color: #5d5c5c;
+  fill: #5d5c5c;
+
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.video::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f03d";
+  display: inline-block;
+  font-size: 5rem;
+  color: #5d5c5c;
+  fill: #5d5c5c;
+
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}

@@ -143,6 +143,10 @@ section {
   width: 100%;
 }
 
+.purpose .introText {
+  width: 70%;
+}
+
 .titleText {
   color: #333;
   font-size: 3rem;

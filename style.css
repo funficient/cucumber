@@ -37,7 +37,7 @@ h3 {
   font-family: "Martel", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
-  margin: 0.5rem 0;
+  margin: 0.8rem 0;
 }
 
 h4 {
@@ -53,11 +53,10 @@ p {
 
 q {
   font-family: "Martel", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 1.8rem;
   padding: 5rem 10rem;
   color: #163647;
-  font-style: italic;
 }
 
 li,
@@ -76,21 +75,25 @@ section {
 
 .primary-button {
   font-size: 1em;
-  letter-spacing: 5%;
-  background-color: #1dbb68;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #fff;
   font-weight: 400;
-  color: rgb(252, 252, 252);
-  border-radius: 0.25rem;
+  color: #333;
+
+  border: 1px solid #1dbb68;
+
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   display: inline-block;
   padding: 0.8rem 2rem;
   margin-top: 1rem;
   text-decoration: none;
   transition: all 0.5s ease;
+  width: 100%;
 }
 
 .primary-button:hover {
-  background-color: #434343;
+  background-color: #1dbb68;
   color: #fff;
   font-weight: 500;
   transition: 0.5s;
@@ -104,17 +107,18 @@ section {
 .banner {
   position: relative;
   width: 100vw;
-  min-height: 50vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(90deg, #55bb67, #488b54);
+  background-image: linear-gradient(90deg, #55bb67, #5bb16b);
+  padding: 10rem;
 }
 
 .content {
   width: 100%;
-  margin: 5% 5%;
+
   align-items: center;
 }
 
@@ -132,14 +136,14 @@ section {
 
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 3rem;
+  margin: 2rem;
   padding: 0;
   align-content: center;
   text-align: center;
 }
 
 .introText {
-  margin: 5%;
+  margin: 2%;
   width: 100%;
 }
 
@@ -166,8 +170,9 @@ section {
   flex-direction: column;
   align-items: center;
 
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: #55bb67;
+  padding: 0 3rem 2rem 3rem;
 }
 .cards {
   display: flex;
@@ -182,7 +187,7 @@ section {
   justify-content: center;
   align-content: center;
   max-height: fit-content;
-  max-width: 400px;
+  width: 400px;
   flex-wrap: wrap;
 
   margin: 1rem;
@@ -191,8 +196,13 @@ section {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
 .values .card {
-  box-shadow: 0 5px -30px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.5);
 }
 
 .values h2 {
@@ -258,7 +268,7 @@ section {
   font-weight: 600;
   content: "\f017";
   display: inline-block;
-  font-size: 5rem;
+  font-size: 3rem;
   color: #5d5c5c;
   fill: #5d5c5c;
 
@@ -273,7 +283,7 @@ section {
   font-weight: 600;
   content: "\f51b";
   display: inline-block;
-  font-size: 5rem;
+  font-size: 3rem;
   color: #5d5c5c;
   fill: #5d5c5c;
 
@@ -288,7 +298,52 @@ section {
   font-weight: 600;
   content: "\f03d";
   display: inline-block;
-  font-size: 5rem;
+  font-size: 3rem;
+  color: #5d5c5c;
+  fill: #5d5c5c;
+
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.slack::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f086";
+  display: inline-block;
+  font-size: 3rem;
+  color: #5d5c5c;
+  fill: #5d5c5c;
+
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.github::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f121";
+  display: inline-block;
+  font-size: 3rem;
+  color: #5d5c5c;
+  fill: #5d5c5c;
+
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.docs::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f02d";
+  display: inline-block;
+  font-size: 3rem;
   color: #5d5c5c;
   fill: #5d5c5c;
 
